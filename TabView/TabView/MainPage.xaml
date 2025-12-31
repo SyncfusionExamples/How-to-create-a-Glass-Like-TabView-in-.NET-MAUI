@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TabView.MainPage"
+             xmlns:tabView="clr-namespace:Syncfusion.Maui.TabView;assembly=Syncfusion.Maui.TabView">
+
+    <Grid>
+        <Image Source="liquidglassimage1.jpg" Aspect="AspectFill"/>
+        <Border Margin="5" WidthRequest="450" BackgroundColor="Transparent" HorizontalOptions="Center">
+        <tabView:SfTabView x:Name="tabView" 
+                               EnableLiquidGlassEffect="True"
+                               TabBarHeight="75"
+                               TabWidthMode="Default"
+                               EnableSwiping="True"
+                               TabBarPlacement="Bottom"                                                       
+                               IndicatorPlacement="Fill"
+                               >
+            <tabView:SfTabView.Items>
+                <tabView:SfTabItem Header="Favorites" ImagePosition="Top" >
+                    <tabView:SfTabItem.Content>
+                        <Grid>
+                            <Grid Grid.Row="1" VerticalOptions="End"  HeightRequest="20">
+                            </Grid>
+                            <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+                                <VerticalStackLayout>
+                                    <BindableLayout.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>James</x:String>
+                                            <x:String>Richard</x:String>
+                                            <x:String>Michael</x:String>
+                                            <x:String>Alex</x:String>
+                                            <x:String>Clara</x:String>
+                                            <x:String>Steve</x:String>
+                                            <x:String>James</x:String>
+                                            <x:String>Alex</x:String>
+                                            <x:String>James</x:String>
+                                            <x:String>James</x:String>
+                                            <x:String>Richard</x:String>
+                                            <x:String>Michael</x:String>
+                                            <x:String>Alex</x:String>
+                                            <x:String>Clara</x:String>
+                                            <x:String>Steve</x:String>
+                                            <x:String>James</x:String>
+                                            <x:String>Alex</x:String>
+                                            <x:String>James</x:String>
+                                        </x:Array>
+                                    </BindableLayout.ItemsSource>
+                                    <BindableLayout.ItemTemplate>
+                                        <DataTemplate x:DataType="{x:Type x:String}">
+                                            <Grid ColumnDefinitions="*" HeightRequest="35" Margin="10,5">
+                                                <Label Grid.Column="0" 
+                                        VerticalOptions="Center" 
+                                        HorizontalOptions="Start"                                                       
+                                        FontSize="16" 
+                                        Text="{Binding}"/>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </BindableLayout.ItemTemplate>
+                                </VerticalStackLayout>
+                            </ScrollView>
+                        </Grid>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem >
+                <tabView:SfTabItem Header="Recents" ImagePosition="Top">
+                    <tabView:SfTabItem.Content>
+                        <Grid>
+                            <Grid Grid.Row="1" VerticalOptions="End"  HeightRequest="20">
+                            </Grid>
+                            <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+                                <VerticalStackLayout>
+                                    <BindableLayout.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>James</x:String>
+                                            <x:String>Richard</x:String>
+                                            <x:String>Michael</x:String>
+                                            <x:String>Alex</x:String>
+                                            <x:String>Clara</x:String>
+                                            <x:String>Steve</x:String>
+                                            <x:String>James</x:String>
+                                            <x:String>Alex</x:String>
+                                            <x:String>James</x:String>
+                                            <x:String>James</x:String>
+                                            <x:String>Richard</x:String>
+                                            <x:String>Michael</x:String>
+                                            <x:String>Alex</x:String>
+                                            <x:String>Clara</x:String>
+                                            <x:String>Steve</x:String>
+                                            <x:String>James</x:String>
+                                            <x:String>Alex</x:String>
+                                            <x:String>James</x:String>
+                                        </x:Array>
+                                    </BindableLayout.ItemsSource>
+                                    <BindableLayout.ItemTemplate>
+                                        <DataTemplate x:DataType="{x:Type x:String}">
+                                            <Grid ColumnDefinitions="*" HeightRequest="35" Margin="10,5">
+                                                <Label Grid.Column="0" 
+                                                           VerticalOptions="Center" 
+                                                           HorizontalOptions="Start"                                                       
+                                                           FontSize="16" 
+                                                           Text="{Binding}"/>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </BindableLayout.ItemTemplate>
+                                </VerticalStackLayout>
+                            </ScrollView>
+                        </Grid>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Header="Contacts" ImagePosition="Top">
+                    <tabView:SfTabItem.Content>
+                        <Grid>
+                            <Grid Grid.Row="1" VerticalOptions="End"  HeightRequest="20">
+                            </Grid>
+                            <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+                                <VerticalStackLayout>
+                                    <BindableLayout.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>Alex</x:String>
+                                            <x:String>Alexander</x:String>
+                                            <x:String>Clara</x:String>
+                                            <x:String>David</x:String>
+                                            <x:String>Gabriella</x:String>
+                                            <x:String>Jackson</x:String>
+                                            <x:String>James</x:String>
+                                            <x:String>John</x:String>
+                                            <x:String>Liam</x:String>
+                                            <x:String>Lita</x:String>
+                                            <x:String>Michael</x:String>
+                                            <x:String>Nora</x:String>
+                                            <x:String>Richard</x:String>
+                                            <x:String>Sebastian</x:String>
+                                            <x:String>Smith</x:String>
+                                            <x:String>Stephen</x:String>
+                                            <x:String>Steve</x:String>
+                                            <x:String>Tye</x:String>
+                                            <x:String>Washington</x:String>
+                                        </x:Array>
+                                    </BindableLayout.ItemsSource>
+                                    <BindableLayout.ItemTemplate>
+                                        <DataTemplate x:DataType="{x:Type x:String}">
+                                            <Grid ColumnDefinitions="*" Margin="10,5">
+                                                <Label Grid.Column="0" 
+                                                           VerticalOptions="Center" 
+                                                           HorizontalOptions="Start" 
+                                                           Margin="5,0"                                                       
+                                                           FontSize="16" 
+                                                           Text="{Binding}"/>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </BindableLayout.ItemTemplate>
+                                </VerticalStackLayout>
+                            </ScrollView>
+                        </Grid>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+            </tabView:SfTabView.Items>
+        </tabView:SfTabView>
+    </Border>
+    </Grid>
+</ContentPage>
